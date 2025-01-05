@@ -1,0 +1,22 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: seagreen;
+}
+
+.login{
+  size: 30px;
+}
+
+label{
+  font-size: 25px;
+}
+
+.first_name,.last_name,.email,.password{
+  width: %;
+  height: px;
+  padding: px;
+  font-size: px;
+}

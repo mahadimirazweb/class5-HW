@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>from</title>
+	<link rel="stylesheet" href="style/from.css">
+</head>
+<body>
+	<div class="wrapper">
+	   <label class="login">Login</label>
+		<form action="" method="post" enctype="multipart/from-data">
+
+			<label for="first_name">First Name:</label>
+			<input type="text" placeholder="First name" name="first_name" id="first_name" class="first_name">
+			<br><br>
+
+			<label for="last_name">Last Name:</label>
+			<input type="text" placeholder="Last name" name="last_name" id="last_name" class="last_name">
+			<br><br>
+
+			<label for="email">Email:</label><br>
+			<input type="email" placeholder="Email" name="email" id="email" class="email" required>
+			<br><br>
+
+			<label for="password">Password:</label>
+			<input type="password" value="password" name="password" id="password" class="password" required>
+<input type="checkbox" onclick="myFunction()">Show Password
+
+<script>
+function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+			<br><br>
+
+			<label for="gender">Gender:</label>
+			<input type="radio" value="male" name="gender" id="gender_m" class="gender_m"><span>Male</span>
+            <input type="radio" value="female" name="gender" id="gender_f" class="gender_f"><span>Female</span>
+            <input type="radio" value="other" name="gender" id="gender_o" class="gender_o"><span>Other</span>
+            <br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br>
+            <button type="Submit" class="btn">Submit</button>
+		</form>
+	</div>
+
+</body>
+</html>
